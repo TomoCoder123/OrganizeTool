@@ -1,0 +1,320 @@
+.table-container {
+  margin: 0;
+  width: 100%;
+  overflow-x: auto;
+  padding: 0;
+  white-space: nowrap;
+}
+
+@media (min-width: 1200px) {
+  .table-container {
+    /* Ensure horizontal scrolling for wider screens */
+    margin: 0 auto;
+    padding: 0;
+    width: 100%; /* Adjust width as needed */
+  }
+}
+.row-header-left {
+  position: sticky;
+  left: 0; /* Stick to the top of the container */
+  background-color: rgb(20, 100, 147);
+  z-index: 2; /* Ensure it stays above other content */
+  border-bottom: 1px solid #ddd; /* Optional: add a bottom border for better visibility */
+  padding: 0px; /* Optional: padding for better appearance */
+}
+.row-header-right {
+  position: sticky;
+  left: 132px; /* Stick to the top of the container */
+  background-color: rgb(20, 100, 147);
+  z-index: 2; /* Ensure it stays above other content */
+  border-bottom: 1px solid #ddd; /* Optional: add a bottom border for better visibility */
+  padding: 5px; /* Optional: padding for better appearance */
+}
+@media (min-width: 426px) {
+  .table-container-inner {
+    min-width: max-content;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+  }
+}
+.schedule-table {
+  border: 1px solid var(--border-primary);
+  border-collapse: initial;
+  border-radius: var(--elem-radius);
+  border-spacing: 0;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.day-columns .day {
+  width: 50px; /* Set the width as per your requirement */
+  text-align: center; /* Center align the text */
+  border: 1px solid white; /* Border for header */
+}
+.day-header-left {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  background: rgb(20, 100, 147);
+  width: 50px; /* Set the width as per your requirement */
+  text-align: center; /* Center align the text */
+  border: 1px solid white; /* Border for header */
+}
+.day-header-right {
+  position: sticky;
+  left: 132px;
+  z-index: 2;
+  background: rgb(20, 100, 147);
+  width: 50px; /* Set the width as per your requirement */
+  text-align: center; /* Center align the text */
+  border: 1px solid white; /* Border for header */
+}
+.header-right {
+  position: sticky;
+  left: 0;
+  width: 50px; /* Set the width as per your requirement */
+  text-align: center; /* Center align the text */
+  border: 1px solid white; /* Border for header */
+}
+.month-year {
+  width: 50px; /* Set the width as per your requirement */
+  text-align: center; /* Center align the text */
+  border: 1px solid white; /* Border for header */
+}
+
+.container {
+  padding: 50px 10%;
+}
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+table tr {
+  border-bottom: 1px solid black;
+  background-color: rgb(20, 100, 147);
+  color: white;
+}
+table tr th,
+table tr td {
+  padding: 5px;
+}
+.form-dv {
+  margin-bottom: 10px;
+}
+.form-div form input {
+  width: 43.5%;
+  padding: 5px;
+}
+.form-div form button {
+  width: 10%;
+  padding: 5px;
+  cursor: pointer;
+  background-color: green;
+  color: white;
+}
+.starting-block {
+  background-color: yellow;
+  color: gray; /* White text color for contrast */
+  border: 1px solid #000080; /* Darker blue border */
+  min-width: 120px;
+  max-width: 120px;
+}
+.starting-block:hover {
+  background-color: darkgoldenrod;
+  color: gray; /* White text color for contrast */
+  border: 1px solid #000080; /* Darker blue border */
+}
+
+.preparing-block {
+  background-color: orange;
+  color: gray; /* White text color for contrast */
+  border: 1px solid #000080; /* Darker blue border */
+  min-width: 120px;
+  max-width: 120px;
+}
+.preparing-block:hover {
+  background-color: darkorange;
+  color: gray; /* White text color for contrast */
+  border: 1px solid #000080; /* Darker blue border */
+}
+
+.running-block {
+  background-color: white;
+  color: gray; /* White text color for contrast */
+  border: 1px solid #000080; /* Darker blue border */
+  min-width: 120px;
+  max-width: 120px;
+}
+.running-block:hover {
+  background-color: gray;
+  color: gray; /* White text color for contrast */
+  border: 1px solid #000080; /* Darker blue border */
+}
+.aborted-block {
+  background-color: red;
+  color: gray; /* White text color for contrast */
+  border: 1px solid #000080; /* Darker blue border */
+  min-width: 120px;
+  max-width: 120px;
+}
+.aborted-block:hover {
+  background-color: maroon;
+  color: gray; /* White text color for contrast */
+  border: 1px solid #000080; /* Darker blue border */
+}
+.power-block {
+  background-color: purple;
+  color: gray; /* White text color for contrast */
+  border: 1px solid #000080; /* Darker blue border */
+  min-width: 120px;
+  max-width: 120px;
+}
+.power-block:hover {
+  background-color: rgba(46, 2, 54, 0.071);
+  color: gray; /* White text color for contrast */
+  border: 1px solid #000080; /* Darker blue border */
+}
+.maintenance-block {
+  background-color: brown;
+  color: gray; /* White text color for contrast */
+  border: 1px solid #000080; /* Darker blue border */
+  min-width: 120px;
+  max-width: 120px;
+}
+.maintenance-block:hover {
+  background-color: black;
+  color: gray; /* White text color for contrast */
+  border: 1px solid #000080; /* Darker blue border */
+}
+.finishing-block {
+  background-color: blue;
+  color: gray; /* White text color for contrast */
+  border: 1px solid #000080; /* Darker blue border */
+  min-width: 120px;
+  max-width: 120px;
+}
+.finishing-block:hover {
+  background-color: darkblue;
+  color: gray; /* White text color for contrast */
+  border: 1px solid #000080; /* Darker blue border */
+  min-width: 120px;
+  max-width: 120px;
+}
+.filled-calendar-day {
+  background-color: #0032ff; /* Blue background color */
+  color: gray; /* White text color for contrast */
+  border: 1px solid #000080; /* Darker blue border */
+  min-width: 120px;
+  max-width: 120px;
+}
+.filled-calendar-day:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.empty-popover-calendar-day {
+  background-color: white; /* Blue background color */
+  color: white; /* White text color for contrast */
+  border: 1px solid #000080; /* Darker blue border */
+  min-width: 120px;
+  max-width: 120px;
+  height: 48.28px;
+}
+.empty-popover-calendar-day:hover {
+  background-color: lightgreen;
+  /* Blue background color */
+}
+.empty-calendar-day {
+  background-color: white; /* Blue background color */
+  color: white; /* White text color for contrast */
+  border: 1px solid #000080; /* Darker blue border */
+  min-width: 120px;
+  max-width: 120px;
+  height: 48.28px;
+}
+.empty-calendar-day:hover {
+  background-color: lightcoral;
+  /* Blue background color */
+}
+
+.calendar {
+  width: 900px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.calendar-header {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.month-header {
+  grid-column: 1 / -1; /* Span all columns */
+  text-align: center; /* Center the text */
+  font-size: 1.5em; /* Increase font size */
+  padding: 10px 0; /* Add some padding */
+  background-color: lightgray; /* Background color for header */
+  border: 1px solid #a6a6a6; /* Border for header */
+}
+.calendar-body {
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+}
+
+.day {
+  width: 100px;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: auto auto 1fr; /* First row for headers, second row for the content */
+  width: 100vw; /* Ensure the grid takes up the full width of the viewport */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  padding: 5px; /* Optional: padding around the grid */
+}
+
+.calendar-day {
+  position: relative;
+  border: 1px solid #a6a6a6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.furnace-block {
+  position: relative;
+  border: 1px solid #a6a6a6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.calendar-day p {
+  position: absolute;
+  right: 10px;
+  color: #a6a6a6;
+}
+.fixed-block p {
+  position: sticky;
+  right: 10px;
+  color: #2115bf;
+}
+
+.current p {
+  color: #000000;
+}
+
+.selected p {
+  color: #cc0000;
+  font-weight: bold;
+}
